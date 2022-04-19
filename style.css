@@ -24,6 +24,56 @@ header .ani_character{
     animation: likeCode 1s infinite;
 }
 
+.menu-hamb {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50px;
+}
+.menu-hamb .activator {
+    padding: 1em;
+    border-radius: 5em 5em 0 0;
+    cursor: pointer;
+}
+
+.menu-hamb img {
+    width: 100%;
+    max-width: 45px;
+}
+
+.menu-hamb ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu-hamb nav {
+    /* color: #0d0f14; */
+    background: #040507;
+    border-radius: 0 0 5em 5em;
+    padding: 0em;
+    clip-path: ellipse(50% 50% at -50% 50%);
+
+}
+.menu-hamb nav ul {
+    /* display: flex-inline; */
+}
+.menu-hamb nav li a {
+    display: block;
+    border-radius: 50%;    
+}
+.menu-hamb nav img {
+    opacity: 0;
+    transform: translateX(-10px);
+}
+.menu-hamb nav:hover {
+    background: rgb(50,56,68);
+}
+
+.img-perfil{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
 @keyframes likeCode { 
     0%{
         opacity: 0;
@@ -36,9 +86,9 @@ header .ani_character{
     }
 }
 
+
 body .first-section{
     background-color: #fde603;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -50,9 +100,11 @@ body .first-section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0 30px 15px 30px;
 }
 .first-section img{
     margin-bottom: 20px;
+
 }
 .first-panel h2, .first-panel h3{
     text-align: center;
@@ -77,11 +129,13 @@ first-section div h3{
 }
 .second-section{
     background-color: #040507;
-    height: 950px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.container{
+    margin: 60px 0 30px 0;
 }
 .second-section h2{
     color: #fde603;    
@@ -89,7 +143,7 @@ first-section div h3{
     text-align: center;
     position: relative;
 }
-.second-section>div{
+.second-section .container>div{
     display: flex;    
     flex-direction: column;
     color: #e5e2e4;
@@ -108,6 +162,7 @@ first-section div h3{
 }
 .box .box-title, .box .box-p{
     max-width: 70%;
+    text-align: center;
 }
 .box-title{
     font-weight: 700;
@@ -124,9 +179,12 @@ first-section div h3{
 
 .third-section{
     background-color: #fde603;
-    height: 750px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.fourth-section{
-    background-color: #e5e2e4;
-    height: 750px;
+.third-section .email-link{
+    text-decoration: none;
+    color: #040507;
 }

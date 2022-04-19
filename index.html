@@ -7,20 +7,35 @@
     <title>Joaquin Villanueva | Portfolio</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./img/Code icon.png" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/EaselPlugin.min.js"></script>    
 </head>
 <header>
     <h1>Joaquin Villanueva<span class="ani_character">_</span>
     </h1>
-    <img src="./img/menu_white_24dp.svg" alt="" style="left: -5px; position: relative;">
+    <div class="menu-hamb">
+        <img class="activator" id="activator" src="//s.svgbox.net/hero-outline.svg?fill=fff#menu-alt-3" alt="">
+        <nav>
+            <ul>
+                <li><a href="#"><img src="//s.svgbox.net/hero-outline.svg?fill=e5e2e4#beaker"></a></li>
+                <li><a href="#"><img src="//s.svgbox.net/hero-outline.svg?fill=e5e2e4#chat"></a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <body>
     <section class="first-section">
         <img src="./img/img-1_mobile.jpg" alt="">
         <div class="first-panel">
-            <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, adipisci.</h2>
+            <img class="img-perfil" src="./img/perfil.jpg" alt="">
+            <h2>Hi! <br>
+                I'm Joaquín.</h2>
             <br>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque minus, quam ipsum saepe, labore, laudantium suscipit iure consequatur dolores perspiciatis nemo fuga accusamus totam quis.</h3>
+            <h3>I've been studying Front-end development for six months. I did it on my own with some help of Udemy and Coderhood.
+                I'm looking for a job currently, if my profile is of your interest contact me via Linkedin.
+                (Find the link at bottom of the page)</h3>
             <br>
             <a href="http://" rel="noopener noreferrer">
                 <button class="btn about-me" h>About me</button>
@@ -28,32 +43,41 @@
         </div>
     </section>
     <section class="second-section">
-        <h2 class="tools">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sequi.</h2>
-        <br>
-        <div>
-            <div class="box rv1">
-                <img src="./img/icons8-html-100.png" alt="">
-                <p class="box-title">Lorem ipsum dolor.</p>
-                <p class="box-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, necessitatibus.</p>
+        <div class="container">
+            <h2 class="tools">¡Hecha un vistazo a algunos trabajos que he realizado!
+            </h2>
+            <br>
+            <div>
+                <div class="box rv1">
+                    <img src="./img/icons8-html-100.png" alt="">
+                    <p class="box-title">EntreLanas&Agujas</p>
+                    <p class="box-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, necessitatibus.</p>
+                </div>
+                <div class="box rv2">
+                    <img src="./img/icons8-html-100.png" alt="">
+                    <p class="box-title">Lorem ipsum amet.</p>
+                    <p class="box-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, in!</p>
+                </div>
+                <div class="box rv3">
+                    <img src="./img/icons8-html-100.png" alt="">
+                    <p class="box-title">Lorem sit amet.</p>
+                    <p class="box-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quas.</p>
+                </div>
+                <a href="http://">
+                    <button class="btn more-work">More work</button>
+                </a>
             </div>
-            <div class="box rv2">
-                <img src="./img/icons8-html-100.png" alt="">
-                <p class="box-title">Lorem ipsum amet.</p>
-                <p class="box-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, in!</p>
-            </div>
-            <div class="box rv3">
-                <img src="./img/icons8-html-100.png" alt="">
-                <p class="box-title">Lorem sit amet.</p>
-                <p class="box-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quas.</p>
-            </div>
-            <a href="http://">
-                <button class="btn more-work">More work</button>
-            </a>
         </div>
     </section>
-    <section class="third-section"></section>
-    <section class="fourth-section"></section>
-    <section class="five-section"></section>
+    <section class="third-section">
+        <h2>
+            Contact Me
+        </h2>
+        <div>
+            <a class="email-link" href = "mailto: joaquinvillanuevafarber@gmail.com"><i class="material-icons">email</i></a>
+            <a class="email-link" href = "#"><i class="material-icons">article</i></a>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
