@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* Base styles */
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-header{
+
+header {
     height: 50px;
     width: 100%;
     background-color: #040507;
@@ -14,13 +18,15 @@ header{
     position: fixed;
     z-index: 99;
 }
-header h1{
+
+header h1 {
     color: #e5e2e4;
     margin-left: 2%;
     text-transform: uppercase;
     font-size: 1.2rem;
 }
-header .ani_character{
+
+header .ani_character {
     animation: likeCode 1s infinite;
 }
 
@@ -30,6 +36,7 @@ header .ani_character{
     position: relative;
     top: 50px;
 }
+
 .menu-hamb .activator {
     padding: 1em;
     border-radius: 5em 5em 0 0;
@@ -46,75 +53,60 @@ header .ani_character{
     margin: 0;
     padding: 0;
 }
+
 .menu-hamb nav {
-    /* color: #0d0f14; */
     background: #040507;
     border-radius: 0 0 5em 5em;
-    padding: 0em;
+    padding: 0;
     clip-path: ellipse(50% 50% at -50% 50%);
+}
 
-}
-.menu-hamb nav ul {
-    /* display: flex-inline; */
-}
 .menu-hamb nav li a {
     display: block;
-    border-radius: 50%;    
+    border-radius: 50%;
 }
+
 .menu-hamb nav img {
     opacity: 0;
     transform: translateX(-10px);
 }
+
 .menu-hamb nav:hover {
-    background: rgb(50,56,68);
+    background: rgb(50, 56, 68);
 }
 
-.img-perfil{
+.img-perfil {
     height: 100px;
     width: 100px;
     border-radius: 100%;
 }
-@keyframes likeCode { 
-    0%{
-        opacity: 0;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+
+@keyframes likeCode {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
-
-body .first-section{
+body .first-section {
     background-color: #fde603;
-    display: flex;
-    flex-direction: column;
     position: relative;
     top: 50px;
 }
-.first-panel{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+.first-panel {
     margin: 0 30px 15px 30px;
 }
-.first-section img{
-    margin-bottom: 20px;
 
+.first-section img {
+    margin-bottom: 20px;
 }
-.first-panel h2, .first-panel h3{
+
+.first-panel h2,
+.first-panel h3 {
     text-align: center;
 }
 
-
-first-section div h3{
-    max-width: 700px;
-}
-.btn{
+.btn {
     background-color: #e5e2e4;
     border: none;
     border-radius: 15px;
@@ -122,69 +114,60 @@ first-section div h3{
     font-weight: 700;
 }
 
-
-.second-section h2, .second-section>div{
-    /* position: relative;
-    top: 50px; */
-}
-.second-section{
+.second-section {
     background-color: #040507;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.container{
+
+.projects-container {
     margin: 60px 0 30px 0;
 }
-.second-section h2{
-    color: #fde603;    
+
+.second-section h2 {
+    color: #fde603;
     margin: 0 20px;
     text-align: center;
     position: relative;
 }
-.second-section .container>div{
-    display: flex;    
-    flex-direction: column;
-    color: #e5e2e4;
-    min-height: 275px;
-    align-items: center;
-}
-.second-section .more-work{
+
+.second-section .more-work {
     max-width: 100px;
+    margin-top: 20px;
 }
-.box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+.box {
     margin-bottom: 20px;
 }
-.box .box-title, .box .box-p{
+
+.box .box-title,
+.box .box-p {
     max-width: 70%;
     text-align: center;
 }
-.box-title{
+
+.box-title {
     font-weight: 700;
     text-align: center;
 }
-.box-p{
+
+.box-p {
     color: #fde603;
     font-weight: 400;
 }
-.box img{
+
+.box img {
     background-color: #fde603;
 }
 
-
-.third-section{
+.third-section {
     background-color: #fde603;
     height: 75px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
-.third-section .email-link{
+
+.third-section .email-link {
     text-decoration: none;
     color: #040507;
 }
