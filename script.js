@@ -21,7 +21,7 @@ var tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
 var toggle = false;
 
 tl.to(".activator", {
-  "background-color": "#040507",
+  "background-color": "var(--color-bg-dark)",
   borderRadius: "5em 5em 0 0",
 });
 tl.to(
