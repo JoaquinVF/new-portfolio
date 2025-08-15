@@ -210,4 +210,17 @@ first-section div h3 {
   color: var(--color-bg-dark);
   font-weight: 600;
 }
+.third-section .email-link{
+    text-decoration: none;
+    color: #040507;
+}
 
+.linkedin-link{
+    text-decoration: none;
+    color: #040507;
+    transition: color 0.3s ease;
+}
+
+.linkedin-link:hover{
+    color: #0a66c2;
+}
